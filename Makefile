@@ -1,5 +1,5 @@
 PKG_NAME := R-Rcpp
-URL := http://cran.r-project.org/src/contrib/Rcpp_0.12.3.tar.gz
+URL := http://cran.r-project.org/src/contrib/Rcpp_0.12.4.tar.gz
 ARCHIVES :=
 
 include ../common/Makefile.common
