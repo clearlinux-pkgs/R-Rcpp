@@ -4,7 +4,7 @@
 #
 Name     : R-Rcpp
 Version  : 0.12.8
-Release  : 39
+Release  : 40
 URL      : http://cran.r-project.org/src/contrib/Rcpp_0.12.8.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/Rcpp_0.12.8.tar.gz
 Summary  : Seamless R and C++ Integration
@@ -36,9 +36,11 @@ lib components for the R-Rcpp package.
 
 %build
 export LANG=C
+export SOURCE_DATE_EPOCH=1484547027
 
 %install
 rm -rf %{buildroot}
+export SOURCE_DATE_EPOCH=1484547027
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -48,7 +50,7 @@ export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export LDFLAGS="$LDFLAGS  -Wl,-z -Wl,relro"
 mkdir -p %{buildroot}/usr/lib64/R/library
-R CMD INSTALL --install-tests --build  -l %{buildroot}/usr/lib64/R/library Rcpp
+R CMD INSTALL --install-tests --built-timestamp=${SOURCE_DATE_EPOCH} --build  -l %{buildroot}/usr/lib64/R/library Rcpp
 %{__rm} -rf %{buildroot}%{_datadir}/R/library/R.css
 %check
 export LANG=C
