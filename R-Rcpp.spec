@@ -4,7 +4,7 @@
 #
 Name     : R-Rcpp
 Version  : 0.12.10
-Release  : 45
+Release  : 46
 URL      : http://cran.r-project.org/src/contrib/Rcpp_0.12.10.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/Rcpp_0.12.10.tar.gz
 Summary  : Seamless R and C++ Integration
@@ -35,12 +35,15 @@ lib components for the R-Rcpp package.
 %setup -q -c -n Rcpp
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1490012213
+export SOURCE_DATE_EPOCH=1492801981
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1490012213
+export SOURCE_DATE_EPOCH=1492801981
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -56,7 +59,7 @@ R CMD INSTALL --install-tests --built-timestamp=${SOURCE_DATE_EPOCH} --build  -l
 export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
 R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library Rcpp || :
 
@@ -67,6 +70,7 @@ R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/lib
 /usr/lib64/R/library/Rcpp/DESCRIPTION
 /usr/lib64/R/library/Rcpp/INDEX
 /usr/lib64/R/library/Rcpp/Meta/Rd.rds
+/usr/lib64/R/library/Rcpp/Meta/features.rds
 /usr/lib64/R/library/Rcpp/Meta/hsearch.rds
 /usr/lib64/R/library/Rcpp/Meta/links.rds
 /usr/lib64/R/library/Rcpp/Meta/nsInfo.rds
