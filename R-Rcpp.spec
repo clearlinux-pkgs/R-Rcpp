@@ -4,7 +4,7 @@
 #
 Name     : R-Rcpp
 Version  : 0.12.13
-Release  : 53
+Release  : 54
 URL      : https://cran.r-project.org/src/contrib/Rcpp_0.12.13.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rcpp_0.12.13.tar.gz
 Summary  : Seamless R and C++ Integration
@@ -12,9 +12,7 @@ Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-Rcpp-lib
 Requires: R-markdown
-Requires: R-rbenchmark
 BuildRequires : R-markdown
-BuildRequires : R-rbenchmark
 BuildRequires : clr-R-helpers
 
 %description
@@ -39,11 +37,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1506614836
+export SOURCE_DATE_EPOCH=1506614993
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1506614836
+export SOURCE_DATE_EPOCH=1506614993
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
