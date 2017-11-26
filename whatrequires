@@ -3,6 +3,7 @@ R-DBI
 R-IRkernel
 R-R6
 R-RcppEigen
+R-TTR
 R-car
 R-chron
 R-curl
@@ -19,6 +20,7 @@ R-jsonlite
 R-knitr
 R-lme4
 R-lmtest
+R-lubridate
 R-magrittr
 R-microbenchmark
 R-minqa
@@ -27,6 +29,7 @@ R-openssl
 R-pbkrtest
 R-plyr
 R-pryr
+R-quantmod
 R-quantreg
 R-reshape2
 R-roxygen2
@@ -35,4 +38,5 @@ R-sandwich
 R-scales
 R-tibble
 R-tis
+R-tseries
 R-xml2
