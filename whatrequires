@@ -14,6 +14,7 @@ R-formatR
 R-ggplot2
 R-gtools
 R-highr
+R-htmltools
 R-httpuv
 R-httr
 R-jsonlite
@@ -22,7 +23,6 @@ R-lme4
 R-lmtest
 R-lubridate
 R-magrittr
-R-microbenchmark
 R-minqa
 R-multcomp
 R-openssl
@@ -32,11 +32,12 @@ R-pryr
 R-quantmod
 R-quantreg
 R-reshape2
+R-rmarkdown
 R-roxygen2
 R-rversions
 R-sandwich
 R-scales
-R-tibble
+R-shiny
 R-tis
 R-tseries
 R-xml2
