@@ -9,6 +9,7 @@ R-RcppArmadillo
 R-RcppEigen
 R-RcppRoll
 R-Rtsne
+R-StanHeaders
 R-VIM
 R-ape
 R-bayesm
@@ -23,6 +24,7 @@ R-dtw
 R-energy
 R-etm
 R-flexsurv
+R-fs
 R-htmltools
 R-httpuv
 R-hunspell
@@ -37,6 +39,7 @@ R-openxlsx
 R-pbkrtest
 R-pdftools
 R-phangorn
+R-pheatmap
 R-pkgbuild
 R-plyr
 R-princurve
@@ -48,6 +51,7 @@ R-raster
 R-readr
 R-readstata13
 R-readxl
+R-remote
 R-reshape2
 R-reticulate
 R-rncl
