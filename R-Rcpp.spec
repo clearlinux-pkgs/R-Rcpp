@@ -4,7 +4,7 @@
 #
 Name     : R-Rcpp
 Version  : 1.0.0
-Release  : 78
+Release  : 79
 URL      : https://cran.r-project.org/src/contrib/Rcpp_1.0.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rcpp_1.0.0.tar.gz
 Summary  : Seamless R and C++ Integration
@@ -14,10 +14,14 @@ Requires: R-Rcpp-lib = %{version}-%{release}
 BuildRequires : buildreq-R
 
 %description
-offer a seamless integration of R and C++. Many R data types and objects can be
- mapped back and forth to C++ equivalents which facilitates both writing of new
- code as well as easier integration of third-party libraries. Documentation
- about 'Rcpp' is provided by several vignettes included in this package, via the
+History
+=======
+Rcpp continues and extends earlier work by Dominick Samperi which he initially
+contributed directly into the RQuantLib package. Then, during 2005 and 2006,
+several releases were made as CRAN packages, first under the name Rcpp and
+later under the name RcppTemplate.  However, both packages were left
+abandonded after November 2006.  Later, in November 2009, two brief releases
+were made and abandonded immediately afterwards.
 
 %package lib
 Summary: lib components for the R-Rcpp package.
@@ -35,10 +39,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1541636795
+export SOURCE_DATE_EPOCH=1552706495
 
 %install
-export SOURCE_DATE_EPOCH=1541636795
+export SOURCE_DATE_EPOCH=1552706495
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -74,8 +78,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library Rcpp|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  Rcpp || :
 
 
 %files
@@ -573,7 +576,6 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/Rcpp/include/Rcpp/vector/vector_from_string.h
 /usr/lib64/R/library/Rcpp/include/RcppCommon.h
 /usr/lib64/R/library/Rcpp/include/doxygen/Examples.h
-/usr/lib64/R/library/Rcpp/libs/symbols.rds
 /usr/lib64/R/library/Rcpp/prompt/module.Rd
 /usr/lib64/R/library/Rcpp/skeleton/Num.cpp
 /usr/lib64/R/library/Rcpp/skeleton/Rcpp_modules_examples.Rd
@@ -586,6 +588,7 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/Rcpp/skeleton/rcpp_module.cpp
 /usr/lib64/R/library/Rcpp/skeleton/stdVector.cpp
 /usr/lib64/R/library/Rcpp/skeleton/zzz.R
+/usr/lib64/R/library/Rcpp/tests/doRUnit.R
 /usr/lib64/R/library/Rcpp/unitTests/bin/amd64/r-cran-testrcpppackage_0.1.0-1_amd64.deb
 /usr/lib64/R/library/Rcpp/unitTests/bin/i386/r-cran-testrcpppackage_0.1.0-1_i386.deb
 /usr/lib64/R/library/Rcpp/unitTests/cpp/DataFrame.cpp
