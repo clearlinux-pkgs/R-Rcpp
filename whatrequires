@@ -12,6 +12,7 @@ R-RcppArmadillo
 R-RcppEigen
 R-RcppRoll
 R-Rtsne
+R-SGP
 R-StanHeaders
 R-ape
 R-bayesm
@@ -28,6 +29,7 @@ R-emmeans
 R-energy
 R-fAssets
 R-feather
+R-flexsurv
 R-fs
 R-geiger
 R-geometry
@@ -42,9 +44,11 @@ R-later
 R-lhs
 R-lme4
 R-lubridate
+R-lwgeom
 R-magick
 R-minqa
 R-multicool
+R-mvoutlier
 R-openxlsx
 R-pbkrtest
 R-pdftools
@@ -71,9 +75,14 @@ R-reticulate
 R-rncl
 R-rsdmx
 R-rstanarm
+R-rversions
+R-rvest
 R-scales
+R-seriation
 R-sf
+R-solrium
 R-styler
+R-systemfit
 R-tensorflow
 R-tidyselect
 R-tm
