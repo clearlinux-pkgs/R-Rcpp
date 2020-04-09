@@ -33,7 +33,6 @@ R-etm
 R-feather
 R-flexsurv
 R-forecast
-R-fs
 R-fst
 R-gdtools
 R-geiger
@@ -43,6 +42,7 @@ R-htmltools
 R-httpuv
 R-hunspell
 R-ipred
+R-isoband
 R-joineRML
 R-later
 R-lhs
@@ -52,7 +52,6 @@ R-lwgeom
 R-magick
 R-minqa
 R-mirt
-R-miscF
 R-multicool
 R-mvnfast
 R-openxlsx
@@ -94,4 +93,3 @@ R-triebeard
 R-units
 R-urltools
 R-wordcloud
-R-xml2
