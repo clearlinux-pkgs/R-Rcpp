@@ -12,6 +12,7 @@ R-RSQLite
 R-RcppArmadillo
 R-RcppEigen
 R-RcppGSL
+R-RcppParallel
 R-RcppRoll
 R-RcppZiggurat
 R-Rtsne
@@ -88,7 +89,6 @@ R-spdep
 R-tesseract
 R-tidyr
 R-tm
-R-treatSens
 R-triebeard
 R-units
 R-urltools

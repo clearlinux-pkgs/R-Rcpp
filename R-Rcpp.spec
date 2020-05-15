@@ -4,7 +4,7 @@
 #
 Name     : R-Rcpp
 Version  : 1.0.4.6
-Release  : 95
+Release  : 96
 URL      : https://cran.r-project.org/src/contrib/Rcpp_1.0.4.6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rcpp_1.0.4.6.tar.gz
 Summary  : Seamless R and C++ Integration
@@ -14,22 +14,10 @@ Requires: R-Rcpp-lib = %{version}-%{release}
 BuildRequires : buildreq-R
 
 %description
-## Rcpp: Seamless R and C++ Integration
-[![Build Status](https://travis-ci.org/RcppCore/Rcpp.svg)](https://travis-ci.org/RcppCore/Rcpp)
-[![License](https://eddelbuettel.github.io/badges/GPL2+.svg)](http://www.gnu.org/licenses/gpl-2.0.html)
-[![CRAN](http://www.r-pkg.org/badges/version/Rcpp)](https://cran.r-project.org/package=Rcpp)
-[![Dependencies](https://tinyverse.netlify.com/badge/Rcpp)](https://cran.r-project.org/package=Rcpp)
-[![Coverage Status](https://codecov.io/gh/RcppCore/Rcpp/graph/badge.svg)](https://codecov.io/github/RcppCore/Rcpp?branch=master)
-[![Debian package](https://img.shields.io/debian/v/r-cran-rcpp/sid?color=brightgreen)](https://packages.debian.org/sid/r-cran-rcpp)
-[![Last Commit](https://img.shields.io/github/last-commit/RcppCore/Rcpp)](https://github.com/RcppCore/Rcpp)
-[![Downloads](http://cranlogs.r-pkg.org/badges/Rcpp?color=brightgreen)](http://www.r-pkg.org/pkg/Rcpp)
-[![CRAN use](https://jangorecki.gitlab.io/rdeps/Rcpp/CRAN_usage.svg?sanitize=true)](https://cran.r-project.org/package=Rcpp)
-[![CRAN indirect](https://jangorecki.gitlab.io/rdeps/Rcpp/indirect_usage.svg?sanitize=true)](https://cran.r-project.org/package=Rcpp)
-[![BioConductor use](https://jangorecki.gitlab.io/rdeps/Rcpp/BioC_usage.svg?sanitize=true)](https://cran.r-project.org/package=Rcpp)
-[![StackOverflow](https://img.shields.io/badge/stackoverflow-rcpp-orange.svg)](https://stackoverflow.com/questions/tagged/rcpp)
-[![JSS](https://img.shields.io/badge/JSS-10.18637%2Fjss.v040.i08-brightgreen)](http://dx.doi.org/10.18637/jss.v040.i08)
-[![Springer useR!](https://img.shields.io/badge/Springer%20useR!-10.1007%2F978--1--4614--6868--4-brightgreen)](https://www.springer.com/gp/book/9781461468677)
-[![TAS](https://img.shields.io/badge/TAS-10.1080%2F00031305.2017.1375990-brightgreen)](http://dx.doi.org/10.1080/00031305.2017.1375990)
+offer a seamless integration of R and C++. Many R data types and objects can be
+ mapped back and forth to C++ equivalents which facilitates both writing of new
+ code as well as easier integration of third-party libraries. Documentation
+ about 'Rcpp' is provided by several vignettes included in this package, via the
 
 %package lib
 Summary: lib components for the R-Rcpp package.
@@ -41,21 +29,22 @@ lib components for the R-Rcpp package.
 
 %prep
 %setup -q -c -n Rcpp
+cd %{_builddir}/Rcpp
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1586450375
+export SOURCE_DATE_EPOCH=1589507181
 
 %install
-export SOURCE_DATE_EPOCH=1586450375
+export SOURCE_DATE_EPOCH=1589507181
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
