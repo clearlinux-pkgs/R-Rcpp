@@ -1,6 +1,5 @@
 # This file contains recursive sources that require this package
 R-Amelia
-R-BatchJobs
 R-BayesFactor
 R-ClustVarLV
 R-DescTools
@@ -27,7 +26,6 @@ R-car
 R-cubature
 R-dcurver
 R-ddalpha
-R-dplyr
 R-dtw
 R-energy
 R-etm
@@ -39,11 +37,8 @@ R-gdtools
 R-geiger
 R-geometry
 R-haven
-R-htmltools
 R-httpuv
 R-hunspell
-R-ipred
-R-isoband
 R-joineRML
 R-later
 R-lhs
@@ -61,7 +56,6 @@ R-pbkrtest
 R-pdftools
 R-phangorn
 R-phylobase
-R-pkgbuild
 R-plyr
 R-princurve
 R-prodlim
@@ -71,7 +65,6 @@ R-pryr
 R-qpdf
 R-ranger
 R-raster
-R-readODS
 R-readr
 R-readstata13
 R-readxl
@@ -85,7 +78,6 @@ R-rstan
 R-rstanarm
 R-rstantools
 R-sf
-R-spdep
 R-tesseract
 R-tidyr
 R-tm
