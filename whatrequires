@@ -28,8 +28,10 @@ R-cubature
 R-dcurver
 R-ddalpha
 R-dtw
+R-eddington
 R-energy
 R-etm
+R-fastGHQuad
 R-feather
 R-flexsurv
 R-forecast
@@ -37,10 +39,10 @@ R-fst
 R-gdtools
 R-geiger
 R-geometry
-R-haven
 R-httpuv
 R-hunspell
 R-joineRML
+R-lamW
 R-later
 R-lhs
 R-lme4
@@ -80,7 +82,10 @@ R-roxygen2
 R-rstan
 R-rstanarm
 R-rstantools
+R-rstpm2
+R-s2
 R-sf
+R-terra
 R-tm
 R-triebeard
 R-units
