@@ -4,7 +4,7 @@
 #
 Name     : R-Rcpp
 Version  : 1.0.7
-Release  : 108
+Release  : 109
 URL      : https://cran.r-project.org/src/contrib/Rcpp_1.0.7.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/Rcpp_1.0.7.tar.gz
 Summary  : Seamless R and C++ Integration
