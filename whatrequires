@@ -11,7 +11,6 @@ R-RProtoBuf
 R-RSQLite
 R-RcppArmadillo
 R-RcppEigen
-R-RcppParallel
 R-RcppRoll
 R-Rtsne
 R-VIM
@@ -21,9 +20,8 @@ R-benchr
 R-bindrcpp
 R-bio3d
 R-brms
-R-car
+R-coneproj
 R-conquer
-R-cpp11
 R-cubature
 R-dcurver
 R-ddalpha
@@ -39,6 +37,8 @@ R-fst
 R-gdtools
 R-geiger
 R-geometry
+R-ggrepel
+R-glmnet
 R-httpuv
 R-hunspell
 R-joineRML
@@ -46,7 +46,7 @@ R-lamW
 R-later
 R-lhs
 R-lme4
-R-lubridate
+R-lobstr
 R-lwgeom
 R-magick
 R-mice
@@ -78,7 +78,7 @@ R-reshape2
 R-reticulate
 R-rncl
 R-robCompositions
-R-roxygen2
+R-robustHD
 R-rstan
 R-rstanarm
 R-rstantools
