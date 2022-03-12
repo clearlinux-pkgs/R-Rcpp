@@ -12,6 +12,7 @@ R-RSQLite
 R-RcppArmadillo
 R-RcppEigen
 R-RcppRoll
+R-RcppTOML
 R-Rtsne
 R-VIM
 R-ape
@@ -20,6 +21,7 @@ R-benchr
 R-bindrcpp
 R-bio3d
 R-brms
+R-collapse
 R-coneproj
 R-conquer
 R-cubature
@@ -31,9 +33,11 @@ R-energy
 R-etm
 R-fastGHQuad
 R-feather
+R-fixest
 R-flexsurv
 R-forecast
 R-fst
+R-fstcore
 R-gdtools
 R-geiger
 R-geometry
