@@ -45,12 +45,12 @@ R-ggrepel
 R-glmnet
 R-httpuv
 R-hunspell
+R-interp
 R-joineRML
 R-lamW
 R-later
 R-lhs
 R-lme4
-R-lobstr
 R-lwgeom
 R-magick
 R-mice
@@ -76,7 +76,6 @@ R-qpdf
 R-ranger
 R-raster
 R-readstata13
-R-readxl
 R-remote
 R-reshape2
 R-reticulate
