@@ -14,6 +14,7 @@ R-RcppEigen
 R-RcppRoll
 R-RcppTOML
 R-Rtsne
+R-Ryacas
 R-VIM
 R-ape
 R-bayesm
