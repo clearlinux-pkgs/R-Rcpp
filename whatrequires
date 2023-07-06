@@ -8,7 +8,6 @@ R-MatchIt
 R-ModelMetrics
 R-RInside
 R-RProtoBuf
-R-RSQLite
 R-RcppArmadillo
 R-RcppEigen
 R-RcppRoll
@@ -16,6 +15,7 @@ R-RcppTOML
 R-Rtsne
 R-Ryacas
 R-VIM
+R-ade4
 R-ape
 R-bayesm
 R-benchr
