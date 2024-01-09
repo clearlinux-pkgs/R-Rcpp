@@ -6,6 +6,7 @@ R-DescTools
 R-Luminescence
 R-MatchIt
 R-ModelMetrics
+R-QuickJSR
 R-RInside
 R-RProtoBuf
 R-RcppArmadillo
@@ -50,6 +51,7 @@ R-interp
 R-joineRML
 R-lamW
 R-later
+R-lbfgsb3c
 R-lhs
 R-lme4
 R-lwgeom
@@ -73,6 +75,7 @@ R-projpred
 R-promises
 R-protolite
 R-pryr
+R-purrrlyr
 R-qpdf
 R-ranger
 R-raster
@@ -89,6 +92,8 @@ R-rstantools
 R-rstpm2
 R-s2
 R-sf
+R-spam
+R-stringmagic
 R-terra
 R-tm
 R-triebeard
