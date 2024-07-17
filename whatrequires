@@ -45,6 +45,7 @@ R-geiger
 R-geometry
 R-ggrepel
 R-glmnet
+R-gridtext
 R-httpuv
 R-hunspell
 R-interp
@@ -94,6 +95,8 @@ R-s2
 R-sf
 R-spam
 R-stringmagic
+R-survey
+R-tclust
 R-terra
 R-tm
 R-triebeard
