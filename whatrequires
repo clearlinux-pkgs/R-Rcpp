@@ -13,6 +13,7 @@ R-RcppArmadillo
 R-RcppEigen
 R-RcppRoll
 R-RcppTOML
+R-Rsolnp
 R-Rtsne
 R-Ryacas
 R-VIM
